@@ -1,0 +1,44 @@
+/* Dylan Sprigg */
+
+
+/* body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffddc1;
+}
+
+/* header styles */
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    background-color: #ffbcd0;
+}
+
+/* form styels */
+form {
+    margin: auto;
+
+    max-width: 500px;
+    background-color: white;
+
+}
+
+/* cheesecake image styles */
+img {
+    display: block;
+    margin: auto;
+
+}
+
+/* total orders styles */
+h2 {
+    text-align: center;
+}
+
+
+/* background style for total orders */
+ul {
+    background-color: #ffbcd0;
+    text-align: center;
+
+}

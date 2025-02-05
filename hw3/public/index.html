@@ -1,0 +1,108 @@
+<!-- Dylan Sprigg -->
+<!DOCTYPE html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" href="stylesheets/hw1.css">
+
+    <!-- allows drop down box to align laft of topping buttons -->
+
+    <style>
+        .toppings {
+            margin-left: 75px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            max-height: 100px;
+            overflow-y: auto;
+            width: 80px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content p {
+            margin: 0;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .dropdown-content p:hover {
+            background-color: #d3cbcb;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cheesecake Order Form</h1>
+    <!-- cheesecake image -->
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+        style="width:190px;height:200px;">
+    <!-- form for selecting toppings -->
+
+    <form id="order-form">
+        <p>Quantity Topping</p>
+        <div class="box">
+            <select id="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <div class="toppings">
+                <!-- buttons -->
+
+                <p><input type="radio" id="plain" name="topping" value="plain"> <label for="plain">Plain</label></p>
+                <p><input type="radio" id="cherry" name="topping" value="cherry"> <label for="cherry">Cherry</label></p>
+                <p><input type="radio" id="chocolate" name="topping" value="chocolate"> <label
+                        for="chocolate">Chocolate</label>
+                </p>
+            </div>
+        </div>
+        <p>
+            <label for="notes">Notes:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="40"
+                placeholder="Enter any special instructions here."></textarea>
+        </p>
+        <button type="submit">Order</button>
+    </form>
+
+    <h2>Orders for <span class="dropdown">Jan
+            <div class="dropdown-content">
+                <p>Jan</p>
+                <p>Feb</p>
+                <p>Mar</p>
+                <p>Apr</p>
+                <p>May</p>
+                <p>Jun</p>
+                <p>Jul</p>
+                <p>Aug</p>
+                <p>Sep</p>
+                <p>Oct</p>
+                <p>Nov</p>
+                <p>Dec</p>
+            </div>
+        </span></h2>
+    <ul>
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 plain</li>
+    </ul>
+
+    <script src="javascripts/stuff.js"></script>
+
+</body>
+
+</html>
